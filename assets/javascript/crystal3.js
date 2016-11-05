@@ -108,6 +108,31 @@
 		
 		},  // crystal.object  
 
+		// 
+		updateCrystal: function(){
+				// Print UserScore in browser as the user score
+	
+					$("#userScore").html(crystal.UserScore);
+
+				// Points Update
+					// If the user score equal to the score that the computer chose, user win and the win score is added by 1
+
+					if (crystal.UserScore == crystal.ComputerScore){
+						crystal.updateWin();
+						crystal.reset();
+					};
+					// If the user score is greater to the score that the computer chose, user loses and the losses score is added by 1
+					if (crystal.UserScore > crystal.ComputerScore){
+						crystal.updateLose();
+						crystal.reset();
+			};
+
+
+		},
+
+
+
+
 		// Function when clicked 
 
 				image : function(){
@@ -124,19 +149,9 @@
 
 				// When clicked:
 				crystal.UserScore = crystal.UserScore + crystal.image1Score;
-					
-					$("#userScore").html(crystal.UserScore);
-
-					// Points Update
-					if (crystal.UserScore == crystal.ComputerScore){
-						crystal.updateWin();
-						crystal.reset();
-					};
-
-					if (crystal.UserScore > crystal.ComputerScore){
-						crystal.updateLose();
-						crystal.reset();
-			};
+				
+				// Update the value of the userscore and the points
+				crystal.updateCrystal();
 
 
 		});
@@ -148,18 +163,10 @@
 				// When clicked:
 				crystal.UserScore = crystal.UserScore + crystal.image2Score;
 
-					$("#userScore").html(crystal.UserScore);
-					
-					// Points Update
-					if (crystal.UserScore == crystal.ComputerScore){
-						crystal.updateWin();
-						crystal.reset();
-					};
+				// Update the value of the userscore and the points
+				crystal.updateCrystal();
 
-					if (crystal.UserScore > crystal.ComputerScore){
-						crystal.updateLose();
-						crystal.reset();
-					};
+
 		});
 
 
@@ -170,18 +177,9 @@
 				// When clicked:
 				crystal.UserScore = crystal.UserScore + crystal.image3Score;
 
-					$("#userScore").html(crystal.UserScore);
-					
-					// Points Update
-					if (crystal.UserScore == crystal.ComputerScore){
-							crystal.updateWin();
-							crystal.reset();
-						};
+				// Update the value of the userscore and the points
+				crystal.updateCrystal();
 
-					if (crystal.UserScore > crystal.ComputerScore){
-							crystal.updateLose();
-							crystal.reset();
-						};
 
 
 		});
@@ -192,18 +190,10 @@
 				// WHen clicked:
 				crystal.UserScore = crystal.UserScore + crystal.image4Score;
 
-					$("#userScore").html(crystal.UserScore);
+				
+				// Update the value of the userscore and the points
+				crystal.updateCrystal();
 
-					// Point Update
-					if (crystal.UserScore == crystal.ComputerScore){
-						crystal.updateWin();
-						crystal.reset();
-					};
-
-					if (crystal.UserScore > crystal.ComputerScore){
-						crystal.updateLose();
-						crystal.reset();
-					};
 
 		});
 
@@ -220,9 +210,6 @@
 	$(document).ready(crystal.reset());
 
 	crystal.image();
-
-
-
 
 
 
