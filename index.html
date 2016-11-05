@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crystal Collector</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+<body>
+<div id="container" >
+	<h1>Crystal Collector!</h1> 
+</div>
+	
+	<div id="direction">
+	<!-- Instruction -->
+	<p>You will be given a randon number at the start of the game.</p>
+	<p>There are four crystals below. By clicking in a crustal you will add a specific amount of points to you total score.</p>
+	<p>You win the game by matching your total score to random number, you lose the game if your score goes above the random number.</p>
+	<p>The value of each crystal is hidden from you until you click on it.</p>
+	<p>Each time when the game starts, the game will change the values of each crystal.</p>
+	
+	</div>
+	
+	<div id="middleContainer">
+
+		<div id="computerScore">
+		<!-- Computer Choice of score  -->
+		</div>
+
+		<!-- Win or Loss Score Update -->
+		<div id="right">
+		<div id="point">
+				<h3>Status: <span id="status"></span></h3>
+				<h3>Wins:  <span id="Win"></span></h3>
+				<h3>Losses:  <span id="Lose"></span> </h3>	
+		</div>
+		</div>
+	
+	</div>
+
+	<!-- Images of crystal -->
+	<div id="images">
+	<img id="image1" src="assets/images/1.png">
+	<img id="image2" src="assets/images/2.png">
+	<img id="image3" src="assets/images/3.png">
+	<img id="image4" src="assets/images/4.png">
+
+		
+	</div>
+
+	<!-- Soundtrack for winning and Losing -->
+	<div>
+		<audio src="assets/audio/win.mp3" id="winSound"></audio>
+		<audio src="assets/audio/lose.mp3" id="loserSound" ></audio>
+	</div>
+	
+	<div id="stateScore">
+		<p>Your Total Score is:</p>
+	</div>
+
+	
+	<div id="userScore">
+		<!-- user score  -->
+	</div>
+
+
+
+<!-- link to external JavaScript file -->
+ <script type='text/javascript' src='https://code.jquery.com/jquery-2.2.0.min.js'></script>
+<script type="text/javascript" src="assets/javaScript/crystal.js" ></script>
+
+
+</body>
+</html>

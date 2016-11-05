@@ -1,0 +1,111 @@
+body {
+	background-image: url(../images/wood.png);
+	text-align: center;
+	color: white;
+}
+
+h1 {
+	font-size: 45px;
+	font-style: cursive;
+}
+
+
+
+#container{
+	margin: auto;
+	width: 800px;
+	padding: 40px;
+	background-color: #E6249F;
+	margin-bottom: 50px;
+	margin-top: 50px;
+	font-weight: bold;
+}
+
+#direction{
+	margin: auto;
+	font-size: 20px;
+	width: 800px;
+	padding: 40px;
+	background-color: #9CEAC8;
+	line-height: 1.5em;
+	margin-bottom: 50px;
+	font-weight: bold;
+}
+#middleContainer{
+	margin: auto;
+	font-size: 20px;
+	width: 880px;
+	height: 130px;
+	padding: 0;
+
+	
+
+}
+
+#computerScore{
+	
+	font-size: 70px;
+	width: 330px;
+	height: 100px;
+	padding: 70px 40px 40px 40px;
+	background-color: #DCE652;
+	font-weight: bold;
+	float: left;
+	font-size: 30px;
+
+}
+#right{
+	margin: 0 0 0 40px;
+	float: right;
+}
+
+
+
+#point{
+	
+	font-size: 30px;
+	width: 330px;
+	height: 130px;
+	padding: 40px;
+	background-color: #F6762C;
+	line-height: 1.5em;
+	font-weight: bold;
+	
+}
+img{
+	float: left;
+	margin: 50px;
+	width: 100px;
+	height: 100px;
+}
+
+#images{
+	margin: auto;
+	width: 800px;
+	height: 250px;
+}
+
+
+#stateScore{
+	margin: auto;
+	width: 830px;
+	padding: 25px;
+	background-color: #7CC2C4;
+	border-bottom: 15px solid black;
+	font-weight: bold;
+	font-size: 30px;
+	margin-top: 25px;
+}
+
+#userScore{
+	margin: auto;
+	padding: 70px 40px 40px 40px;
+	width: 800px;
+	height: 70px;
+	margin-bottom: 50px;
+	background-color: #7CC2C4;
+	font-size: 30px;
+
+}
+
+
