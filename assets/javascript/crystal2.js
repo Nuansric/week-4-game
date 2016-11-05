@@ -86,16 +86,9 @@
 				this.ComputerScore= (Math.floor(Math.random() * 120)) + 19,
 
 				// Variable: image1Score
-				this.image1Score = (Math.floor(Math.random() * 12)) + 1;
+				this.imageScore = (Math.floor(Math.random() * 12)) + 1;
 
-				// Variable: image2Score
-				this.image2Score= (Math.floor(Math.random() * 12)) + 1,
-
-				// Variable: image3Score
-				this.image3Score= (Math.floor(Math.random() * 12)) + 1,
-
-				// Variable: image4Score
-				this.image4Score= (Math.floor(Math.random() * 12)) + 1,
+				
 
 				// When reset
 				this.UserScore= 0;
@@ -120,10 +113,10 @@
 					// If the user score is greater to the score that the computer chose, user loses and the losses score is added by 1
 
 			// Code on click for image 1
-			$("#image1").on("click", function() {
+			$("img").on("click", function() {
 
 				// When clicked:
-				crystal.UserScore = crystal.UserScore + crystal.image1Score;
+				crystal.UserScore = crystal.UserScore + crystal.imageScore;
 					
 					$("#userScore").html(crystal.UserScore);
 
@@ -142,70 +135,7 @@
 		});
 
 
-			// Code on click for image 2
-			$("#image2").on("click", function(){
-				
-				// When clicked:
-				crystal.UserScore = crystal.UserScore + crystal.image2Score;
-
-					$("#userScore").html(crystal.UserScore);
-					
-					// Points Update
-					if (crystal.UserScore == crystal.ComputerScore){
-						crystal.updateWin();
-						crystal.reset();
-					};
-
-					if (crystal.UserScore > crystal.ComputerScore){
-						crystal.updateLose();
-						crystal.reset();
-					};
-		});
-
-
-
-			// Code on click for image 3
-			$("#image3").on("click", function () {	
-
-				// When clicked:
-				crystal.UserScore = crystal.UserScore + crystal.image3Score;
-
-					$("#userScore").html(crystal.UserScore);
-					
-					// Points Update
-					if (crystal.UserScore == crystal.ComputerScore){
-							crystal.updateWin();
-							crystal.reset();
-						};
-
-					if (crystal.UserScore > crystal.ComputerScore){
-							crystal.updateLose();
-							crystal.reset();
-						};
-
-
-		});
-
-			// Code on click for image 4
-			$("#image4").on("click", function () {
 			
-				// WHen clicked:
-				crystal.UserScore = crystal.UserScore + crystal.image4Score;
-
-					$("#userScore").html(crystal.UserScore);
-
-					// Point Update
-					if (crystal.UserScore == crystal.ComputerScore){
-						crystal.updateWin();
-						crystal.reset();
-					};
-
-					if (crystal.UserScore > crystal.ComputerScore){
-						crystal.updateLose();
-						crystal.reset();
-					};
-
-		});
 
 			
 
