@@ -3,18 +3,6 @@
 
 		// Variable: computerScore
 		ComputerScore: 0,
-
-		// Variable: image1Score
-		image1Score: 0,
-		
-		// Variable: image2Score
-		image2Score: 0,
-
-		// Variable: image3Score
-		image3Score: 0,
-
-		// Variable: image4Score
-		image4Score: 0,
 		
 		// Variable: userScore
 		UserScore: 0,
@@ -85,7 +73,7 @@
 				// Variable: computerScore
 				this.ComputerScore= (Math.floor(Math.random() * 120)) + 19,
 
-				// Variable: image1Score
+				// Variable: imageScore
 				this.imageScore = (Math.floor(Math.random() * 12)) + 1;
 
 				
@@ -112,7 +100,7 @@
 
 					// If the user score is greater to the score that the computer chose, user loses and the losses score is added by 1
 
-			// Code on click for image 1
+			// Code on click for images
 			$("img").on("click", function() {
 
 				// When clicked:
